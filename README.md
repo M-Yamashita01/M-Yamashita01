@@ -8,6 +8,7 @@ I'm currently working in Fukuoka, Japan, and learning Ruby, Ruby on Rails, Docke
 - [Qiita](https://qiita.com/M-Yamashii)
 - [Zenn](https://zenn.dev/m_yamashii)
 - [Speaker Deck](https://speakerdeck.com/myamashii)
+- [Hatena Blog](https://m-yamashii.hatenablog.com/)
 
 # GitHub Stats
 
