@@ -1,0 +1,13 @@
+# Local Terraform state and working files
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+crash.*.log
+
+# Real variable files may hold private config / tokens — keep only the example.
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Keep the dependency lock file committed (do NOT ignore .terraform.lock.hcl)

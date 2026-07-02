@@ -1,0 +1,34 @@
+# Copy to terraform.tfvars and edit. terraform.tfvars is git-ignored.
+# Provide the token via the environment instead of this file:
+#   export GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx
+
+github_owner = "M-Yamashita01"
+
+# Shared baseline for every repo. Override per-repo below as needed.
+defaults = {
+  visibility             = "private"
+  allow_squash_merge     = true
+  allow_merge_commit     = false
+  allow_rebase_merge     = false
+  delete_branch_on_merge = true
+  vulnerability_alerts   = true
+  default_branch         = "main"
+}
+
+repositories = {
+  # The profile repository itself (public, master branch, no renovate/protection).
+  "M-Yamashita01" = {
+    description            = "Profile repository"
+    visibility             = "public"
+    default_branch         = "master"
+    manage_renovate        = false
+    protect_default_branch = false
+  }
+
+  # Example application repo inheriting the defaults above.
+  "example-app" = {
+    description     = "Example application"
+    topics          = ["ruby", "rails"]
+    required_checks = ["test"]
+  }
+}
